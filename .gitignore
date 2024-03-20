@@ -45,6 +45,9 @@ tramp
 *.un~
 Session.vim
 
+### visual studio code
+.vscode/
+
 ## os-specific noise files
 
 ### linux flavors
