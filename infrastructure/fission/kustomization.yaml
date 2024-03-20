@@ -4,5 +4,6 @@ namespace: fission
 
 resources:
   - crds.yaml
+  - rbac.yaml
   - release.yaml
   - repositories.yaml
