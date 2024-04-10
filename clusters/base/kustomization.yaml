@@ -4,6 +4,7 @@ namespace: flux-system
 
 resources:
   - infrastructure/cert-manager.yaml
+  - infrastructure/fission-environments.yaml
   - infrastructure/fission.yaml
   - infrastructure/nginx.yaml
   - infrastructure/self-signed-ca.yaml
