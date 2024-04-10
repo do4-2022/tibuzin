@@ -1,0 +1,11 @@
+apiVersion: fission.io/v1
+kind: Environment
+metadata:
+  name: node16
+spec:
+  version: 3
+  runtime:
+    image: fission/node-env
+  builder:
+    image: fission/node-builder
+  poolsize: 3
