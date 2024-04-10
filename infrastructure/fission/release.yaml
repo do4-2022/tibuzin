@@ -16,3 +16,4 @@ spec:
   values:
     serviceType: ClusterIP
     routerServiceType: ClusterIP
+    defaultNamespace: fission
