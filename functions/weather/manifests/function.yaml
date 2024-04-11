@@ -1,0 +1,16 @@
+apiVersion: fission.io/v1
+kind: Function
+metadata:
+  name: weather
+spec:
+  environment:
+    name: node16
+    namespace: fission
+  package:
+    packageref:
+      name: weather
+      namespace: fission
+  InvokeStrategy:
+    ExecutionStrategy:
+      ExecutorType: poolmgr
+    StrategyType: execution

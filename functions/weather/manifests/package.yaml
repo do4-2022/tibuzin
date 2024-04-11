@@ -1,0 +1,12 @@
+apiVersion: fission.io/v1
+kind: Package
+metadata:
+  name: weather
+spec:
+  environment:
+    name: node16
+    namespace: fission
+  source:
+    type: url
+    url: https://github.com/do4-2022/tibuzin/archive/main.zip
+  buildcmd: "./tibuzin-main/functions/weather/build.sh"
