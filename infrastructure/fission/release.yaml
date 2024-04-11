@@ -17,3 +17,17 @@ spec:
     serviceType: ClusterIP
     routerServiceType: ClusterIP
     defaultNamespace: fission
+    serviceMonitor:
+      enabled: true
+      namespace: monitoring
+      additionalServiceMonitorLabels:
+        release: monitoring
+    podMonitor:
+      enabled: true
+      namespace: monitoring
+      additionalPodMonitorLabels:
+        release: monitoring
+    grafana:
+      namespace: monitoring
+      dashboards:
+        enable: true

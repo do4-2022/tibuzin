@@ -21,3 +21,10 @@ resource "kubernetes_namespace_v1" "nginx" {
     name = "nginx"
   }
 }
+
+resource "kubernetes_namespace_v1" "monitoring" {
+  metadata {
+    name = "monitoring"
+  }
+}
+
