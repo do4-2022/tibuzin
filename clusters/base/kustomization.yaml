@@ -4,6 +4,7 @@ namespace: flux-system
 
 resources:
   - functions/hello-world.yaml
+  - functions/weather.yaml
   - infrastructure/cert-manager.yaml
   - infrastructure/fission-environments.yaml
   - infrastructure/fission.yaml
