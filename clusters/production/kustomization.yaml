@@ -21,3 +21,9 @@ patches:
       kind: Kustomization
       name: weather-function
     path: overlays/functions/weather.yaml
+  - target:
+      group: kustomize.toolkit.fluxcd.io
+      version: v1
+      kind: Kustomization
+      name: monitoring
+    path: overlays/infrastructure/monitoring.yaml

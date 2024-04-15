@@ -1,0 +1,23 @@
+# create empty patches array if it doesn't exist
+- op: add
+  path: /spec/patches
+  value: []
+# ingress patch for production url
+- op: add
+  path: /spec/patches/-
+  value:
+    target:
+      group: helm.toolkit.fluxcd.io
+      version: v2beta1
+      kind: HelmRelease
+      name: monitoring
+    patch: |
+      - op: replace
+        path: /spec/values/grafana/ingress/hosts/0
+        value: grafana.tibuzin.do-2021.fr
+      - op: replace
+        path: /spec/values/grafana/ingress/tls/0/hosts/0
+        value: grafana.tibuzin.do-2021.fr
+      - op: replace
+        path: /spec/values/grafana/ingress/tls/0/secretName
+        value: grafana.tibuzin.do-2021.fr
