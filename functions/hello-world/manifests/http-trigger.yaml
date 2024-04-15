@@ -3,7 +3,7 @@ kind: HTTPTrigger
 metadata:
   name: hello-world
 spec:
-  prefix: /
+  relativeurl: /
   methods:
     - GET
   functionref:

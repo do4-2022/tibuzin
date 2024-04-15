@@ -3,7 +3,7 @@ kind: HTTPTrigger
 metadata:
   name: weather
 spec:
-  prefix: /weather
+  relativeurl: /weather
   methods:
     - GET
   functionref:
