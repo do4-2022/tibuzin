@@ -8,7 +8,11 @@ module.exports = async function (context) {
   return {
     status: 200,
     body: {
-      text: `La température actuelle à Montpellier est de ${res.data.current.temperature_2m}`,
+      text: `La température actuelle à Montpellier est de ${
+        res.data.current.temperature_2m
+      } degré${
+        Math.abs(res.data.current.temperature_2m) > 1 ? "s" : ""
+      } et la vitesse du vent est de ${res.data.current.wind_speed_10m} km/h.`,
     },
   };
 };
