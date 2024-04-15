@@ -1,0 +1,20 @@
+# create empty patches array if it doesn't exist
+- op: add
+  path: /spec/patches
+  value: []
+# ingress patch for production url
+- op: add
+  path: /spec/patches/-
+  value:
+    target:
+      group: fission.io
+      version: v1
+      kind: HTTPTrigger
+      name: weather
+    patch: |
+      - op: replace
+        path: /spec/ingressconfig/host
+        value: api.tibuzin.do-2021.fr
+      - op: replace
+        path: /spec/ingressconfig/tls
+        value: api.tibuzin.do-2021.fr
