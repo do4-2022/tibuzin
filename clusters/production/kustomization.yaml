@@ -6,3 +6,4 @@ resources:
   - ../base
   - infrastructure/cinder-csi.yaml
   - infrastructure/cloud-controller-manager.yaml
+  - infrastructure/letsencrypt-issuer.yaml
