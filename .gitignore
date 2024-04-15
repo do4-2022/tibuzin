@@ -84,3 +84,9 @@ terraform.tfstate.*
 
 # vault
 vault-keys.json
+
+# openstack
+*openrc.sh
+
+# kubernetes
+*kubeconfig.yaml
