@@ -21,3 +21,6 @@ spec:
       plugin:
         nodePlugin:
           kubeletDir: /var/lib/k0s/kubelet
+    storageClass:
+      delete:
+        isDefault: true
