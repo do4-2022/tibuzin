@@ -4,3 +4,4 @@ namespace: flux-system
 
 resources:
   - ../base
+    - infrastructure/self-signed-ca.yaml

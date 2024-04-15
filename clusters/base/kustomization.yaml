@@ -10,5 +10,4 @@ resources:
   - infrastructure/fission.yaml
   - infrastructure/monitoring.yaml
   - infrastructure/nginx.yaml
-  - infrastructure/self-signed-ca.yaml
   - infrastructure/weave-gitops.yaml
